@@ -1,0 +1,138 @@
+.chat-bot {
+    width: 100vw;
+    height: 100vh;
+    min-width: 920px;
+    min-height: 800px;
+    overflow: auto;
+    border: 1px solid #70707011;
+    background-image: url('@/assets/image/audio-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+}
+
+.audio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    height: 58px;
+    background: #44444433;
+    color: #666;
+    font-size: 16px;
+    padding: 0 30px;
+}
+.audio-header-left,.audio-header-right{
+    display: flex;
+    align-items: center;
+}
+
+.main-content-box {
+    margin: 40px;
+}
+
+.main-content-center {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 40px;
+    position: relative;
+}
+
+.audio-input-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.voice-wave{
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+}
+.click-talk-btn {
+    width: 203px;
+    height: 76px;
+    margin: 0 auto;
+    background-image: url('@/assets/image/talk-btn.png');
+    background-size: cover;
+    color: #fff;
+    font-family: Microsoft YaHei, Microsoft YaHei;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    font-style: normal;
+    vertical-align: middle;
+    line-height: 62px
+}
+
+
+.text-content-box {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 20px;
+}
+
+.text-card {
+    box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.16);
+    border-radius: 25px;
+    margin: 12px 0 10px;
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+}
+
+:deep(.input .el-textarea__inner) {
+    box-shadow: none;
+    margin: 10px 0;
+    padding: 10px;
+    color: #041C95;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+:deep(.text-output-box .input .el-textarea__inner) {
+    color: #333;
+}
+
+.active-input {
+    left: -10px;
+    top: 0px;
+    background-color: rgba(255, 255, 255, .95);
+    z-index: 10;
+    transition: left .5s ease-in-out, top .5s ease-in-out;
+}
+
+.inactive-input {
+    left: 10px;
+    top: -10px;
+    z-index: 1;
+    transition: left .5s ease-in-out, top .5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.10);
+
+
+}
+
+:deep(.inactive-input .input .el-textarea__inner) {
+    background-color: transparent;
+}
+
+.send-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+:deep(.el-drawer) {
+    background-color: #f2f2f2;
+}
+
+:deep(.el-overlay) {
+    top: 60px;
+}
+
+:deep( .el-select__wrapper) {
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px #B6B4B4 inset;
+}
