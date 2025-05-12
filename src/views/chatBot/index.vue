@@ -668,8 +668,8 @@ const handleInterruption = () => {
 }
 
 //   下载源码
-const  handleDownloadDemo = ()=>{
-  window.open('https://gitee.com/genitop/mindcraft_chatbot')
+const handleDownloadDemo = () => {
+  window.open('https://www.mindcraft.com.cn/#/#smartVoice')
 }
 </script>
 <style scoped>
