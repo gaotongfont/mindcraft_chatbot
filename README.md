@@ -19,7 +19,7 @@ https://www.mindcraft.com.cn/chatbot/
 
 ## 项目安装
 ```bash
-git clone https://gitee.com/genitop/mindcraft_chatbot.git
+git clone https://github.com/gaotongfont/mindcraft_chatbot.git
 cd mindcraft_chatbot
 npm install
 npm run dev
